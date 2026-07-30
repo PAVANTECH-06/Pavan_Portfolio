@@ -11,11 +11,11 @@ window.PORTFOLIO_DATA = {
     initials: "GP",
     handle: "Pavan.dev",
     roles: [
-      "Cloud Developer",
+      "Software Engineer",
       "Generative AI Developer",
       "Data Analyst",
       "Python Developer",
-      "Software Engineer",
+      "Cloud Developer",
     ],
     summary:
       "B.Tech CSE graduate building cloud-backed, AI-powered systems — from REST APIs and databases to LLM integrations that turn raw data into decisions. AWS Certified, product-minded, and most at home where backend engineering meets applied AI and data analysis.",
@@ -36,8 +36,8 @@ window.PORTFOLIO_DATA = {
   },
 
   stats: [
-    { value: "4+", label: "Projects shipped" },
-    { value: "8+", label: "REST APIs designed" },
+    { value: "8+", label: "Projects shipped" },
+    { value: "20+", label: "REST APIs designed" },
     { value: "93%", label: "ML model accuracy" },
     { value: "40%", label: "Manual work cut via GenAI" },
   ],
@@ -147,8 +147,12 @@ window.PORTFOLIO_DATA = {
 
   certificates: [
     { title: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "2025", image: "assets/certificates/aws-cloud-practitioner.jpg" },
-    { title: "Data Analytics with Python (Elite)", issuer: "NPTEL", year: "2025", image: "assets/certificates/nptel-data-analytics.jpg" },
-    { title: "AI/ML Technical Presentation — Winner", issuer: "College Tech Symposium", year: "2025", image: "assets/certificates/aiml-presentation.jpg" },
+    { title: "Data Analytics with Python (Elite)", issuer: "NPTEL", year: "2025", image: "assets/certificates/nptel.jpeg" },
+    { title: "Zero Trust Cloud Security Virtual Internship", issuer: "AICTE", year: "2025", image: "assets/certificates/zscalar.jpg" },
+    { title: "Android Developer Virtual Internship", issuer: "AICTE", year: "2025", image: "assets/certificates/ANDROID.jpg" },
+    { title: "Web Full Stack Developer Virtual Internship", issuer: "AICTE", year: "2024", image: "assets/certificates/WEB FULL STACK.jpg" },
+    { title: "AI - ML Virtual Internship", issuer: "AICTE", year: "2024", image: "assets/certificates/GOOGLE.jpg" },
+    { title: "Cloud Virtual Internship", issuer: "AICTE", year: "2023", image: "assets/certificates/AWS.jpg" },
     { title: "3★ Python", issuer: "HackerRank", year: "2025", image: "assets/certificates/hackerrank-python.jpg" },
   ],
 };

@@ -261,7 +261,7 @@ html[data-theme="day"] .theme-toggle .knob{ transform: translateX(24px); }
 }
 .cert-track::-webkit-scrollbar{ display:none; }
 .cert-card{
-  flex:0 0 auto; width:230px; scroll-snap-align:start;
+  flex:0 0 calc(50% - 9px); min-width:0; scroll-snap-align:start;
   background:var(--panel); border:1px solid var(--panel-border); border-radius:var(--radius);
   overflow:hidden; cursor:pointer; transition:.3s var(--ease);
 }
@@ -271,6 +271,10 @@ html[data-theme="day"] .theme-toggle .knob{ transform: translateX(24px); }
 .cert-info{ padding:14px; }
 .cert-info h4{ font-size:13.5px; margin-bottom:3px; }
 .cert-info span{ font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); }
+
+@media (max-width: 700px){
+  .cert-card{ flex-basis:100%; }
+}
 
 .cert-arrow{
   flex:0 0 auto; width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center;
@@ -289,7 +293,7 @@ html[data-theme="day"] .theme-toggle .knob{ transform: translateX(24px); }
 #lightbox .close{ position:absolute; top:24px; right:32px; font-size:28px; color:#fff; }
 
 /* ---------- CONTACT ---------- */
-.contact-grid{ display:grid; grid-template-columns: .9fr 1.1fr; gap:56px; }
+.contact-grid{ display:grid; grid-template-columns: .9fr 1.1fr; gap:56px; align-items: start; }
 .contact-list{ display:flex; flex-direction:column; gap:16px; margin-top:22px; }
 .contact-item{
   display:flex; align-items:center; justify-content:space-between; gap:12px;

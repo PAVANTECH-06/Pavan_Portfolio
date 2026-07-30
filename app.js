@@ -186,19 +186,46 @@ function initCertCarousel() {
   const prev = $("#certPrev");
   const next = $("#certNext");
   if (!track || !prev || !next) return;
-  const scrollAmount = () => Math.min(track.clientWidth * 0.8, 600);
-  prev.addEventListener("click", () => track.scrollBy({ left: -scrollAmount(), behavior: "smooth" }));
-  next.addEventListener("click", () => track.scrollBy({ left: scrollAmount(), behavior: "smooth" }));
+
+  const cards = Array.from(track.querySelectorAll(".cert-card"));
+  if (!cards.length) {
+    prev.classList.add("disabled");
+    next.classList.add("disabled");
+    return;
+  }
+
+  let currentIndex = 0;
 
   const updateArrows = () => {
-    const atStart = track.scrollLeft <= 4;
-    const atEnd = track.scrollLeft >= track.scrollWidth - track.clientWidth - 4;
-    prev.classList.toggle("disabled", atStart);
-    next.classList.toggle("disabled", atEnd || track.scrollWidth <= track.clientWidth + 4);
+    prev.classList.toggle("disabled", currentIndex <= 0);
+    next.classList.toggle("disabled", currentIndex >= cards.length - 1);
   };
-  track.addEventListener("scroll", updateArrows);
+
+  const goToIndex = (index) => {
+    currentIndex = Math.max(0, Math.min(cards.length - 1, index));
+    cards[currentIndex].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+    updateArrows();
+  };
+
+  prev.addEventListener("click", () => goToIndex(currentIndex - 1));
+  next.addEventListener("click", () => goToIndex(currentIndex + 1));
+  track.addEventListener("scroll", () => {
+    const trackRect = track.getBoundingClientRect();
+    let bestIndex = currentIndex;
+    let bestDistance = Infinity;
+    cards.forEach((card, index) => {
+      const rect = card.getBoundingClientRect();
+      const distance = Math.abs(rect.left - trackRect.left);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        bestIndex = index;
+      }
+    });
+    currentIndex = bestIndex;
+    updateArrows();
+  });
   window.addEventListener("resize", updateArrows);
-  updateArrows();
+  requestAnimationFrame(updateArrows);
 }
 
 function openLightbox(src, alt) {
