@@ -21,11 +21,11 @@
     const suggestWrap = document.getElementById("chatSuggest");
 
     const suggestions = [
-      "What are your skills?",
-      "Tell me about your projects",
-      "Your work experience?",
-      "How can I contact you?",
-      "What certifications do you have?",
+      "skills",
+      "projects",
+      "work experience",
+      "contact info",
+      "certifications",
     ];
 
     function addMsg(text, who) {
@@ -128,7 +128,7 @@
       panel.classList.toggle("open");
       toggle.classList.toggle("open");
       if (panel.classList.contains("open") && !body.dataset.greeted) {
-        addMsg(`Hi! I'm ${p.shortName}'s assistant 👋 Ask me anything about their skills, projects or background.`, "bot");
+        addMsg(`Hi! I'm ${p.shortName}'s assistant 👋 Ask me anything about his skills, projects or background.`, "bot");
         renderSuggestions();
         body.dataset.greeted = "1";
       }
