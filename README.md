@@ -1,99 +1,200 @@
-# Your portfolio — setup guide
+<div align="center">
 
-No login, no database, no signup — you edit `data.js` directly and push to GitHub
-whenever you want to update something. Simple and fully free.
+# Hi 👋, I'm Pavan Gubbala
 
-## What you have
+### AI Engineer • Full Stack Developer • Data Analyst
 
-```
-index.html                 → the site
-styles.css                  → all design/theme styling (colors, fonts, layout)
-app.js                        → renders the site from data.js
-chatbot.js                     → the floating assistant
-sky.js                           → animated night-stars / morning-clouds background
-data.js                            → ALL your content lives here — this is the only file
-                                      you normally need to touch
-assets/certificates/                → put your certificate images here
-assets/projects/                      → put your project screenshots here
-```
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=24&duration=3500&pause=1000&color=00C2FF&center=true&vCenter=true&width=700&lines=AI+Engineer;Full+Stack+Developer;Python+Developer;Data+Analyst;Building+AI+Powered+Applications" />
+
+<p>
+<a href="https://pavangubbala.me">🌐 Portfolio</a> •
+<a href="https://github.com/PAVANTECH-06">GitHub</a> •
+<a href="https://www.linkedin.com/in/pavan-gubbala">LinkedIn</a>
+</p>
+
+</div>
 
 ---
 
-## 1. How to update your content
+## 🚀 About Me
 
-Open `data.js`. Everything on the site — your name, roles, summary, education,
-experience, projects, achievements, certificates, contact links — is one plain
-JavaScript object. To change anything:
+I'm a Computer Science graduate passionate about building intelligent applications using **Artificial Intelligence, Machine Learning, Full Stack Development, and Data Analytics**.
 
-1. Edit the relevant field in `data.js` (see examples below).
-2. Save the file.
-3. Commit and push to GitHub (`git add . && git commit -m "update portfolio" && git
-   push`) — GitHub Pages rebuilds automatically within a minute or two.
+I enjoy solving real-world problems through scalable software, clean UI, and modern technologies.
 
-**Add a new project** — copy one block inside the `projects: [ ... ]` array and
-change the values:
-```js
-{
-  title: "Your New Project",
-  status: "DEPLOYED",
-  description: "One or two sentences about what it does and why it matters.",
-  metrics: ["Metric 1", "Metric 2"],
-  tech: ["Python", "FastAPI"],
-  link: "https://github.com/PAVANTECH-06/your-repo",
-  image: "assets/projects/your-project.jpg",
-},
-```
-
-**Add a certificate** — same idea, inside `certificates: [ ... ]`:
-```js
-{ title: "Certificate Name", issuer: "Issuing body", year: "2026", image: "assets/certificates/your-cert.jpg" },
-```
-
-**Update education** — fill in the two `EDIT_ME` placeholders under `education: [
-... ]` for your Intermediate (12th) and SSC (10th) details — school/college name and
-your percentage or CGPA.
-
-**Update your WhatsApp number** — the `whatsapp` field under `profile` should be
-your number with country code and no symbols, e.g. `"919347846836"` for
-`+91 93478 46836`.
+- 🎓 B.Tech in Computer Science & Engineering
+- 🤖 AI & Machine Learning Enthusiast
+- 💻 Full Stack Developer
+- 📊 Data Analytics
+- 🌱 Currently learning Advanced AI Systems & Cloud Technologies
+- 🚀 Looking for Software Engineer / AI Engineer opportunities
 
 ---
 
-## 2. Add certificate & project images
+# 🛠 Tech Stack
 
-1. Drop image files into `assets/certificates/` and `assets/projects/`.
-2. In `data.js`, set the `image` field to the relative path, e.g.
-   `assets/certificates/aws-cloud-practitioner.jpg`.
-3. Commit and push — done.
+### Languages
 
-You can also just paste any public image URL instead of a local file — both work.
+<p>
+<img src="https://skillicons.dev/icons?i=python,java,javascript,html,css,sql" />
+</p>
+
+### Frontend
+
+<p>
+<img src="https://skillicons.dev/icons?i=react,bootstrap,tailwind,vite" />
+</p>
+
+### Backend
+
+<p>
+<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs" />
+</p>
+
+### Databases
+
+<p>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,sqlite" />
+</p>
+
+### AI / ML
+
+- Google Gemini
+- IBM Granite
+- Scikit-Learn
+- Pandas
+- NumPy
+- NLP
+- TensorFlow (Basics)
+
+### Cloud & Tools
+
+<p>
+<img src="https://skillicons.dev/icons?i=git,github,docker,aws,vscode,postman" />
+</p>
 
 ---
 
-## 3. Deploy to your domain via GitHub Pages
+# 🚀 Featured Projects
 
-Since your domain already points at a GitHub Pages repo:
+## 🏙 Smart City Assistant
 
-1. Replace the contents of that repo with all the files in this project (same repo
-   name/branch you already use for Pages).
-2. Commit and push.
-3. Your custom domain keeps working automatically — only the files changed, not the
-   Pages/DNS configuration.
-4. Give it 1–2 minutes, then hard-refresh your domain.
+AI-powered Smart City platform for sustainable urban development.
+
+### Features
+
+- AI Chat Assistant
+- Policy Summarizer
+- Eco Tips Generator
+- KPI Forecasting
+- Citizen Feedback Analysis
+- Anomaly Detection
+- Multi-language Support
+
+**Tech Stack**
+
+FastAPI • Streamlit • Google Gemini • IBM Granite • PostgreSQL • Scikit-Learn
 
 ---
 
-## 4. Customizing the look
+## 🔐 Threat Analyzer
 
-- Colors and the day/night sky gradients are CSS variables at the top of
-  `styles.css`, under `:root` (night) and `html[data-theme="day"]` (morning) — safe
-  to tweak hex values there.
-- Certificates scroll horizontally with the arrow buttons (`#certPrev` /
-  `#certNext` in `index.html`, styled via `.cert-carousel` in `styles.css`) — add as
-  many certificates as you want, they'll just keep scrolling.
+Cybersecurity platform that analyzes security threats and generates AI-powered reports.
 
-## 5. The chatbot
+**Tech**
 
-`chatbot.js` is free and rule-based — no API key, no running cost. It answers from
-whatever is currently in `data.js`, so once you edit and push, the chatbot's answers
-update automatically too.
+Python • Streamlit • ETL • APIs
+
+---
+
+## 📚 Book Review Platform
+
+Full Stack MERN application with authentication and review management.
+
+**Tech**
+
+React • Node.js • MongoDB
+
+---
+
+## 📋 Task Management System
+
+Task and team collaboration platform with authentication and admin dashboard.
+
+**Tech**
+
+React • FastAPI • SQLite
+
+---
+
+## 📧 Spam Detection System
+
+Machine Learning project for classifying spam messages.
+
+**Tech**
+
+Python • NLP • Scikit-Learn • Streamlit
+
+---
+
+# 📊 GitHub Stats
+
+<p align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=PAVANTECH-06&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=PAVANTECH-06&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PAVANTECH-06&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+---
+
+# 🏆 Achievements
+
+- 🏅 AWS Certified Cloud Practitioner
+- 🤖 Built multiple AI-powered applications
+- 🌍 Developed multilingual AI solutions
+- 📈 Strong foundation in Data Analytics & Machine Learning
+- 🚀 Passionate about scalable software engineering
+
+---
+
+# 📈 Activity Graph
+
+[![Pavan's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=PAVANTECH-06&theme=tokyo-night)](https://github.com/PAVANTECH-06)
+
+---
+
+# 🤝 Connect With Me
+
+<p align="left">
+
+<a href="https://pavangubbala.me">
+<img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white"/>
+</a>
+
+<a href="https://github.com/PAVANTECH-06">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="https://www.linkedin.com/in/pavan-gubbala">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
+</a>
+
+</p>
+
+---
+
+<div align="center">
+
+### ⭐ "Building AI-powered solutions that create real-world impact."
+
+![](https://komarev.com/ghpvc/?username=PAVANTECH-06&style=for-the-badge&color=blue)
+
+</div>
