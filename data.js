@@ -141,11 +141,13 @@ window.PORTFOLIO_DATA = {
     { title: "Winner — AI/ML Technical Presentation Competition", description: "Recognized for a technical presentation on applied AI/ML." },
     { title: "HackerRank — 3★ Python", description: "Verified problem-solving proficiency in Python." },
     { title: "AWS Certified Cloud Practitioner", description: "Foundational certification across AWS core services." },
+    { title: "Microsoft Certified: SQL AI Developer Associate", description: "Credential for expertise in SQL AI development." },
     { title: "Data Analytics with Python — NPTEL (Elite)", description: "Elite-level certification in applied data analytics." },
     { title: "NSS Volunteer", description: "National Service Scheme — community engagement and service." },
   ],
 
   certificates: [
+    { title: "Microsoft Certified: SQL AI Developer Associate", issuer: "Microsoft", year: "2026", image: "assets/certificates/Microsoft Associate.jpg" },
     { title: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", year: "2025", image: "assets/certificates/aws-cloud-practitioner.jpg" },
     { title: "Data Analytics with Python (Elite)", issuer: "NPTEL", year: "2025", image: "assets/certificates/nptel.jpeg" },
     { title: "Zero Trust Cloud Security Virtual Internship", issuer: "AICTE", year: "2025", image: "assets/certificates/zscalar.jpg" },
